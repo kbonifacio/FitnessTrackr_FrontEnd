@@ -1,0 +1,116 @@
+.topContainer {
+    background-color: white;
+    
+}
+body{
+    background-image: url('../images/FitnessTrackr_Background.png');
+    background-repeat: no-repeat;
+}
+.welcomeContainer{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.innerWelcomeContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height:70vh;
+    margin-top: 20px;
+    border-left: solid rgba(117, 0, 128, 0.577) 10px;
+}
+.welcomeText{
+    padding: 15px;
+}
+.L1 {
+    font-size: 2.5em;
+    color: rgba(43, 131, 83, 0.543);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.L2{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.L3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.L4{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.L5{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+.L6{
+    font-size: 2.0em;
+    color: rgba(43, 131, 83, 0.543);
+}
+.b1{
+    color:rgb(62, 36, 140)
+}
+.buttonContainer{
+    margin-top: 10px;
+    width: 55vw;
+
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joinButton{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-left: solid rgb(151, 208, 118) 10px;
+    padding-left: 20px;
+    width: 20vw;
+    height:10vh;
+    text-decoration: none;
+    color: black;
+}
+.innerJoinButton{
+    text-decoration: none;
+}
+.joinButton:hover{
+    background-color: rgb(151, 208, 118);
+    border-left: solid white 8px;
+
+}
+.joinText{
+    margin:0;
+}
+.loginButton{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-left: solid rgb(92, 170, 253) 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 20vw;
+    height: 10vh;
+}
+a.innerLoginButton{
+    text-decoration: none;
+    color: black;
+}
+.loginButton:hover {
+    background-color: rgb(92, 170, 253);
+    border-left: solid white 8px;
+
+}
+.loginText{
+    margin:0;
+}
