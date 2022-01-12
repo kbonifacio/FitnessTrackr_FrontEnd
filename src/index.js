@@ -16,6 +16,15 @@ const Main = () =>{
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [currentUser, setCurrentUser] = useState({})
 
+    useEffect(() => {
+        const savedToken = localStorage.getItem('token')
+        console.log('token exists')
+        if (savedToken) {
+            setToken(savedToken)
+            setIsLoggedIn(true)
+        }
+    })
+    
     return (
         <>
             <div>
