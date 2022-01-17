@@ -1,17 +1,21 @@
+body{
+    background-image: url('../images/FitnessTrackr_Background.png'), url('../images/blueCloud.png');
+    background-position:initial, left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 75vh, 120vw;
+}
 .topContainer {
     background-color: white;
     
-}
-body{
-    background-image: url('../images/FitnessTrackr_Background.png');
-    background-repeat: no-repeat;
 }
 .welcomeContainer{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: flex-end;
-
+    padding-right: 7vw;
+    /* background-image: url('../images/PngItem_2669106.png');
+    background-size:60vh; */
 }
 .innerWelcomeContainer{
     background-color: white;
@@ -22,7 +26,7 @@ body{
     width: 55vw;
     height:70vh;
     margin-top: 20px;
-    border-left: solid rgba(117, 0, 128, 0.577) 10px;
+    border-left: solid rgba(117, 0, 128, 0.577) 20px;
 }
 .welcomeText{
     padding: 15px;
@@ -72,10 +76,10 @@ body{
 }
 .joinButton{
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: white;
     border-left: solid rgb(151, 208, 118) 10px;
-    padding-left: 20px;
     width: 20vw;
     height:10vh;
     text-decoration: none;
@@ -85,8 +89,11 @@ body{
     text-decoration: none;
 }
 .joinButton:hover{
+    background-position: center left;
     background-color: rgb(151, 208, 118);
-    border-left: solid white 8px;
+    background-image: url('../images/pngwing.com.png');
+    background-size: 120px;
+    background-repeat: no-repeat;
 
 }
 .joinText{
@@ -94,21 +101,26 @@ body{
 }
 .loginButton{
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: white;
     border-left: solid rgb(92, 170, 253) 10px;
     margin-left: 10px;
-    padding-left: 20px;
     width: 20vw;
     height: 10vh;
 }
 a.innerLoginButton{
+
     text-decoration: none;
     color: black;
 }
 .loginButton:hover {
+    background-position: center left;
     background-color: rgb(92, 170, 253);
-    border-left: solid white 8px;
+    background-image: url('../images/pngwing.com.png');
+    background-size: 120px;
+    background-repeat: no-repeat;
+    /* border-left: solid white 10px; */
 
 }
 .loginText{

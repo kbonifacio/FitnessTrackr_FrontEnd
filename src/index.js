@@ -7,7 +7,9 @@ import {
     Home,
     Routines,
     MyRoutines,
-    Activities
+    Activities,
+    UserDashboard,
+    CreateRoutine
 } from './components';
 import AccountForm from './components/AccountForm';
 
@@ -15,28 +17,27 @@ const Main = () =>{
     const [token, setToken] = useState('')
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [currentUser, setCurrentUser] = useState({})
+    const [routines, setRoutines] = useState([])
+    const [activity, setActivity] = useState([])
 
     useEffect(() => {
         const savedToken = localStorage.getItem('token')
-        console.log('token exists')
+
         if (savedToken) {
             setToken(savedToken)
             setIsLoggedIn(true)
         }
     })
-    
+
     return (
         <>
             <div>
                 <div className='header'>
                     <nav>
                         <NavLink to='/' className="homeLink">Home</NavLink> 
-                        <NavLink to='/Join' className="link">Join</NavLink>
-                        <NavLink to='/Login' className="link">Login</NavLink>
                         <NavLink to='/Account' className="link">Account</NavLink> 
                         <NavLink to='/Activities' className="link">Activities</NavLink> 
                         <NavLink to='/Routines' className="link">Routines</NavLink> 
-                        <NavLink to='/MyRoutines' className="link">My Routines</NavLink> 
                     </nav>
                 </div>
 
@@ -45,7 +46,7 @@ const Main = () =>{
                         <Home/>
                     } />
                     <Route path='/Routines' exact element={
-                        <Routines/>
+                        <Routines routines={routines} setRoutines={setRoutines}/>
                     } />
                     <Route path='/MyRoutines' exact element={
                         <MyRoutines/>
@@ -58,6 +59,12 @@ const Main = () =>{
                     } />
                     <Route path='/Login' exact element={
                         <AccountForm setToken={setToken} action="login" setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} setCurrentUser={setCurrentUser} />  
+                    } />
+                    <Route path='/Account' exact element={
+                        <UserDashboard currentUser={currentUser} token={token} setToken={setToken} setCurrentUser={setCurrentUser} setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} routines={routines} setRoutines={setRoutines} activity={activity} setActivity={setActivity} />
+                    } />
+                    <Route path='/CreateRoutine' exact element={
+                        <CreateRoutine token ={token} isLoggedIn={isLoggedIn}/>
                     } />
                 </Routes>
             </div>

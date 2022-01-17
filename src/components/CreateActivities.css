@@ -1,0 +1,25 @@
+.newActivityForm{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(182, 62, 148);
+    opacity: 0.9;
+    border: solid white 2px;
+    padding: 8px;
+}
+
+.AL1{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2px;
+}
+.AL2{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2px;
+}
+.AL3{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2px;
+    margin-bottom: 10px;
+}

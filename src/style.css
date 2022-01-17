@@ -1,0 +1,25 @@
+main {
+    color:black;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264e70;
+    height: 40px;
+}
+.homeLink {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.link {
+    border-left: solid white 2px;
+    color:white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+body {
+    background-color: #87c8d2;
+}

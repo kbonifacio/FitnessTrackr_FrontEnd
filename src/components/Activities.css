@@ -4,34 +4,23 @@
     background-color: white;
 
 }
-.indivRoutineContainer{
+
+.activityContainer {
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
-.routineContent{
+.activityContent {
     border: solid black 2px;
     background-color: white;
     width: 500px;
 }
-.routineLBorder{
+.activityContentLBorder{
     border-left: solid #fcddb6 8px;
     padding: 8px;
 }
-/* .routineScrollBox{
+/* .parentActivityContainer{
     width: 100vw;
     height: 100vh;
     overflow: auto;
 } */
-.detailsContainer {
-    display: flex;
-}
-.count {
-    margin-left: 10px;
-}
-.activities {
-    margin-top: 10px;
-    background-color: rgb(240, 224, 180);
-    opacity: 0.8;
-}
-

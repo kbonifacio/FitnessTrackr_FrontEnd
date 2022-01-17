@@ -1,0 +1,36 @@
+.parentInputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+
+}
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(140, 207, 208);
+    border-radius: 50%;
+    border: solid white 10px;
+    width: 30vw;
+    height: 40vh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    margin-top: 10px;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+div.actionHeader{
+    font-size: 3rem;
+    
+}
